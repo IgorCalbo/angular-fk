@@ -1,0 +1,22 @@
+<p>home works {{name}} !</p>
+
+<button [attr.meu-atributo-dinamico]="idButton">Botão</button>
+<button (click)="submit()">Clique</button>
+
+<!-- Condicionais e loops nas versões mais novas do Angular -->
+
+@if(mostrarTitulo) {
+<h1>Meu título</h1>
+}
+@else if(name == "Igor") {
+<h1>Título para o Igor</h1>
+}
+@else {
+<h1>Sem título</h1>
+}
+
+@for(item of listaFrutas; track item) {
+<p>{{item}}</p>
+}
+
+<h1>{{minhaPropsDeFora}}</h1>
